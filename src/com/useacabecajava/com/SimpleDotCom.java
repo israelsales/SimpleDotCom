@@ -28,7 +28,7 @@ public class SimpleDotCom {
 
         if(numOfHits==locationCells.length){
             result = "kill";
-        } 
+        }
 
 
 
