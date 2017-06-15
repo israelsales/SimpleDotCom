@@ -3,7 +3,7 @@ package com.useacabecajava.com;
 public class SimpleDotCom {
 
     int[] locationCells;
-    int numOfHits;
+    int numOfHits=0;
 
     //            Capiture o palpite do usuario como um parametro de String
     String checkYourself(String stringGuess) {
@@ -26,17 +26,19 @@ public class SimpleDotCom {
             }
         }
 
+//        estamos fora do loop, mas vejamos se já terminamos (acertamos 3 vezes) e alteramos a string do resultado
+//        para "kill"
         if(numOfHits==locationCells.length){
             result = "kill";
         }
 
+//        exibe o resultado para o usuario ("miss", a menos que seja alterado para "hit" ou "kill")
+        System.out.println(result);
 
-
-        return null;
+        return result;
     }
 
-    void setLocationCells(int[] loc) {
-//        Capture os locais das celulas como um parametro de matriz int
-//        Atribua o parametro dos locais das celulas a variavel de instancia desses locais
+    void setLocationCells(int[] locs) {
+        locationCells = locs;
     }
 }

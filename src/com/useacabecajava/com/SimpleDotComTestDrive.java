@@ -20,7 +20,7 @@ public class SimpleDotComTestDrive {
         String testResult = "failed";
 
 //        se o palpite ficticio {2} retornar um "acerto", o codigo estara funcionando
-        if(result.equals("passed")){
+        if(result.equals("hit")){
             testResult = "passed";
         }
 
