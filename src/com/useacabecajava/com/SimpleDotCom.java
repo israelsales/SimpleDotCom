@@ -20,7 +20,7 @@ public class SimpleDotCom {
 
 //            compara o palpite do usuario com esse elemento (celula) da matriz
             if (intGuess == cell) {
-                result = "hit"; //timemos um acerto
+                result = "hit"; //tivemos um acerto
                 numOfHits++;
                 break; //sai do loop, nao é preciso testar as outras celulas
             }
@@ -33,7 +33,7 @@ public class SimpleDotCom {
         }
 
 //        exibe o resultado para o usuario ("miss", a menos que seja alterado para "hit" ou "kill")
-        System.out.println(result);
+//        System.out.println(result);
 
         return result;
     }
